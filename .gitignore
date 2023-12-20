@@ -57,3 +57,6 @@ cache/
 
 
 apps/undefined-e2e/artifacts
+apps/playtopia-rn-e2e/artifacts
+apps/play-rn-e2e/artifacts
+apps/test-rn-e2e/artifacts
