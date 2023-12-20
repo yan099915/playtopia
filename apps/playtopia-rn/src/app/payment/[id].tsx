@@ -117,8 +117,8 @@ export default function PaymentProcess() {
                     <Text>{DATA[id].children.length}</Text>
                   </View>
                   <View style={styles.orderDetailsContainer}>
-                    {DATA[id].children.map((child) => (
-                      <View>
+                    {DATA[id].children.map((child, id) => (
+                      <View key={id}>
                         <View
                           style={{
                             flexDirection: 'row',
@@ -212,8 +212,8 @@ export default function PaymentProcess() {
                   <View style={styles.paymentDetailsContainer}>
                     <View style={styles.paymentDetailsContentContainer}>
                       <Text style={globalStyles.textBold}>Harga ticket</Text>
-                      {DATA[id].children.map((child) => (
-                        <View style={styles.paymentItemsContainer}>
+                      {DATA[id].children.map((child, id) => (
+                        <View key={id} style={styles.paymentItemsContainer}>
                           <Text>
                             {child.duration + ' Jam - Gelang ' + child.type}{' '}
                             (x1)
